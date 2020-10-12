@@ -290,7 +290,7 @@ State</translation>
     <message>
         <location filename="RecordInfo/recordinfo.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>Form</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.ui" line="134"/>
@@ -348,7 +348,7 @@ State</translation>
     <message>
         <location filename="RecordInfo/recordinfo.ui" line="500"/>
         <source>返回</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Back</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="80"/>
@@ -546,141 +546,134 @@ State</translation>
     <message>
         <location filename="SystemConf/systemconf.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>Form</translation>
     </message>
     <message>
-        <location filename="SystemConf/systemconf.ui" line="130"/>
-        <source>      1）配置的端口与主机的回路相对应，配置端口-1，对应主机的回路-1；
-说明：2）端口配置为0，表示不启用该端口；
-      3）启用状态列表示对应监控主机的网络功能是否启用</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="SystemConf/systemconf.ui" line="176"/>
+        <location filename="SystemConf/systemconf.ui" line="174"/>
         <source>删除主机</source>
-        <translation type="unfinished"></translation>
+        <translation>DelHost</translation>
     </message>
     <message>
-        <location filename="SystemConf/systemconf.ui" line="211"/>
+        <location filename="SystemConf/systemconf.ui" line="209"/>
         <source>保存</source>
-        <translation type="unfinished">Save</translation>
+        <translation>Save</translation>
     </message>
     <message>
-        <location filename="SystemConf/systemconf.ui" line="258"/>
+        <location filename="SystemConf/systemconf.ui" line="256"/>
         <source>增加主机</source>
-        <translation type="unfinished"></translation>
+        <translation>AddHost</translation>
     </message>
     <message>
-        <location filename="SystemConf/systemconf.ui" line="293"/>
+        <location filename="SystemConf/systemconf.ui" line="291"/>
         <source>返回</source>
-        <translation type="unfinished"></translation>
+        <translation>Back</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="182"/>
         <location filename="SystemConf/systemconf.cpp" line="226"/>
         <source>主机名称</source>
-        <translation type="unfinished">HostName</translation>
+        <translation>HostName</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="182"/>
         <location filename="SystemConf/systemconf.cpp" line="229"/>
         <source>主机IP地址</source>
-        <translation type="unfinished"></translation>
+        <translation>Host IP</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="182"/>
         <source>数据库</source>
-        <translation type="unfinished"></translation>
+        <translation>Database</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="182"/>
         <source>状态</source>
-        <translation type="unfinished"></translation>
+        <translation>State</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="183"/>
         <source>端口-1</source>
-        <translation type="unfinished"></translation>
+        <translation>Port-1</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="183"/>
         <source>图纸-1</source>
-        <translation type="unfinished"></translation>
+        <translation>PNG-1</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="183"/>
         <source>端口-2</source>
-        <translation type="unfinished"></translation>
+        <translation>Port-2</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="183"/>
         <source>图纸-2</source>
-        <translation type="unfinished"></translation>
+        <translation>PNG-2</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="183"/>
         <source>端口-3</source>
-        <translation type="unfinished"></translation>
+        <translation>Port-3</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="183"/>
         <source>图纸-3</source>
-        <translation type="unfinished"></translation>
+        <translation>PNG-3</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="183"/>
         <source>端口-4</source>
-        <translation type="unfinished"></translation>
+        <translation>Port-4</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="183"/>
         <source>图纸-4</source>
-        <translation type="unfinished"></translation>
+        <translation>PNG-4</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="184"/>
         <source>端口-5</source>
-        <translation type="unfinished"></translation>
+        <translation>Port-5</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="184"/>
         <source>图纸-5</source>
-        <translation type="unfinished"></translation>
+        <translation>PNG-5</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="184"/>
         <source>端口-6</source>
-        <translation type="unfinished"></translation>
+        <translation>Port-6</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="184"/>
         <source>图纸-6</source>
-        <translation type="unfinished"></translation>
+        <translation>PNG-6</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="184"/>
         <source>端口-7</source>
-        <translation type="unfinished"></translation>
+        <translation>Port-7</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="184"/>
         <source>图纸-7</source>
-        <translation type="unfinished"></translation>
+        <translation>PNG-7</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="184"/>
         <source>端口-8</source>
-        <translation type="unfinished"></translation>
+        <translation>Port-8</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="184"/>
         <source>图纸-8</source>
-        <translation type="unfinished"></translation>
+        <translation>PNG-8</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="232"/>
         <source>数据库路径</source>
-        <translation type="unfinished"></translation>
+        <translation>DatabasePath</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="240"/>
@@ -700,18 +693,18 @@ State</translation>
         <location filename="SystemConf/systemconf.cpp" line="282"/>
         <location filename="SystemConf/systemconf.cpp" line="285"/>
         <source>0</source>
-        <translation type="unfinished">3A {0?}</translation>
+        <translation>0</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="303"/>
         <location filename="SystemConf/systemconf.cpp" line="306"/>
         <source>删除提示</source>
-        <translation type="unfinished"></translation>
+        <translation>DelTip</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="303"/>
         <source>该条信息已经删除!</source>
-        <translation type="unfinished"></translation>
+        <translation>The row has been deleted!</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="303"/>
@@ -719,38 +712,38 @@ State</translation>
         <location filename="SystemConf/systemconf.cpp" line="366"/>
         <location filename="SystemConf/systemconf.cpp" line="370"/>
         <source>关闭</source>
-        <translation type="unfinished"></translation>
+        <translation>Close</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="306"/>
         <source>地址信息至少要有一条!</source>
-        <translation type="unfinished"></translation>
+        <translation>There must be at least one row!</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="366"/>
         <location filename="SystemConf/systemconf.cpp" line="370"/>
         <source>保存提示</source>
-        <translation type="unfinished"></translation>
+        <translation>SaveTip</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="366"/>
         <source>信息保存失败！</source>
-        <translation type="unfinished"></translation>
+        <translation>Save Failed!</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="370"/>
         <source>信息保存成功！</source>
-        <translation type="unfinished"></translation>
+        <translation>Saved Successfully!</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="379"/>
         <source>启用</source>
-        <translation type="unfinished"></translation>
+        <translation>Enable</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="382"/>
         <source>禁用</source>
-        <translation type="unfinished"></translation>
+        <translation>Disable</translation>
     </message>
 </context>
 <context>

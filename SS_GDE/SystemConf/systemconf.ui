@@ -127,9 +127,7 @@ font: 16pt &quot;楷体&quot;;
 }</string>
        </property>
        <property name="text">
-        <string>      1）配置的端口与主机的回路相对应，配置端口-1，对应主机的回路-1；
-说明：2）端口配置为0，表示不启用该端口；
-      3）启用状态列表示对应监控主机的网络功能是否启用</string>
+        <string/>
        </property>
       </widget>
      </item>

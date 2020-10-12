@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DBSendWidget</class>
+ <widget class="QWidget" name="DBSendWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#DBSendWidget{
+background-color: rgb(255, 255, 255);
+}
+
+QToolButton{
+font: 24pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+border:2px solid  rgb(0, 125, 165);
+border-radius:15px;
+background-color: rgb(0, 125, 165);
+}
+QLabel{
+font: 18pt &quot;微软雅黑&quot;;
+}
+QStackedWidget{
+color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+border:1px solid  rgb(0, 125, 165);
+}
+QLineEdit{
+font: 22pt &quot;微软雅黑&quot;;
+border:2px solid  rgb(0, 125, 165);
+border-radius:5px;
+}
+
+QProgressBar {
+font: 30pt &quot;楷体&quot;;
+color: rgb(255, 255, 255);
+border: 2px solid rgb(0, 125, 165);
+border-radius: 8px;
+text-align: center;
+background-color: rgb(85, 170, 127);
+background-color: rgb(0, 125, 165);
+}
+
+QProgressBar::chunk {
+background-color: rgb(0, 255, 0);
+}</string>
+  </property>
+  <widget class="QLineEdit" name="lineEditTargetHost">
+   <property name="geometry">
+    <rect>
+     <x>175</x>
+     <y>60</y>
+     <width>271</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>192.168.45.128</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditTargetPort">
+   <property name="geometry">
+    <rect>
+     <x>655</x>
+     <y>60</y>
+     <width>141</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>6666</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>60</y>
+     <width>110</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>目标地址:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>60</y>
+     <width>110</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>目标端口:</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="tBtnOpenFile">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>350</y>
+     <width>170</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/Image/file.png</normaloff>:/Image/file.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="tBtnSendFile">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>350</y>
+     <width>170</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>发送文件</string>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/Image/send.png</normaloff>:/Image/send.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>174</x>
+     <y>250</y>
+     <width>620</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="clientStatusLabel">
+   <property name="geometry">
+    <rect>
+     <x>175</x>
+     <y>125</y>
+     <width>620</width>
+     <height>116</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+font: 18pt &quot;微软雅黑&quot;;
+border:2px solid rgb(0, 125, 165);
+border-radius:5px;
+}</string>
+   </property>
+   <property name="text">
+    <string>等待文件打开!</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>125</y>
+     <width>110</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>文件状态:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>255</y>
+     <width>110</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>传送进度:</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="tBtnBack">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>350</y>
+     <width>170</width>
+     <height>170</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/Image/back.png</normaloff>:/Image/back.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

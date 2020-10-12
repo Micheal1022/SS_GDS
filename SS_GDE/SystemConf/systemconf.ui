@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SystemConf</class>
+ <widget class="QWidget" name="SystemConf">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1599</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#SystemConf{
+background-color: rgb(255, 255, 255);
+}
+
+QToolButton{
+font: 16pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+border:2px solid  rgb(0, 125, 165);
+border-radius:10px;
+background-color: rgb(0, 125, 165);
+}
+
+QLabel{
+font: 18pt &quot;微软雅黑&quot;;
+}
+QGroupBox{
+font: 20pt &quot;微软雅黑&quot;;
+color: rgb(0, 122, 165);
+color:rgb(61, 68, 75);
+border:2px solid rgb(0, 122, 165);
+border:2px solid rgb(61, 68, 75);
+border-radius:8px;
+margin-top:22px;
+}
+QGroupBox:title{
+subcontrol-origin: margin;
+left: 5px;
+}
+QLineEdit{
+font: 16pt &quot;微软雅黑&quot;;
+color:rgb(15, 41, 68);
+border-radius:5px;
+border:2px solid rgb(0, 125, 165);
+background-color: rgb(255, 255, 255);
+}
+QCheckBox{
+spacing: 5px;
+font: 18pt &quot;微软雅黑&quot;;
+color:rgb(15, 41, 68);
+border:2px solid rgb(0, 122, 165);
+border:2px solid rgb(61, 68, 75);
+border-radius:5px;
+}
+QCheckBox::indicator{
+border:1px solid black;
+width:25px;
+height:25px;
+margin-left:5px;
+border-radius:2px;
+image: url(:/Image/uncheck.png);
+}
+QCheckBox::indicator::unchecked {
+image: url(:/Image/uncheck.png);
+}
+QCheckBox::indicator::checked {
+image: url(:/Image/checked.png);
+}
+QTableWidget{
+font: 14pt &quot;微软雅黑&quot;;
+gridline-color: rgb(0, 0, 0);
+border:1px solid rgb(0, 122, 165);
+border-radius:5px;
+background-color: rgb(255, 255, 255);
+}
+QTableWidgetItem{
+border:1px solid rgb(0, 0, 0);
+}
+
+QGroupBox{
+font: 16pt &quot;微软雅黑&quot;;
+color:rgb(0, 125, 165);
+color:rgb(0,   0,   0);
+border:1px solid rgb(0, 125, 165);
+border-radius:5px;
+margin-top:0px;
+}
+QGroupBox:title{
+subcontrol-origin: margin;
+left: 5px;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="10,0">
+   <property name="spacing">
+    <number>5</number>
+   </property>
+   <property name="leftMargin">
+    <number>5</number>
+   </property>
+   <property name="topMargin">
+    <number>5</number>
+   </property>
+   <property name="rightMargin">
+    <number>5</number>
+   </property>
+   <property name="bottomMargin">
+    <number>5</number>
+   </property>
+   <item>
+    <widget class="QTableWidget" name="tableWidget"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="spacing">
+      <number>20</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="lbExplain">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+font: 16pt &quot;楷体&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>      1）配置的端口与主机的回路相对应，配置端口-1，对应主机的回路-1；
+说明：2）端口配置为0，表示不启用该端口；
+      3）启用状态列表示对应监控主机的网络功能是否启用</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QToolButton" name="tBtnDel">
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>删除主机</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../image.qrc">
+         <normaloff>:/Image/delDev.png</normaloff>:/Image/delDev.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="tBtnSave">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>保存</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../image.qrc">
+         <normaloff>:/Image/save.png</normaloff>:/Image/save.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="tBtnAdd">
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>增加主机</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../image.qrc">
+         <normaloff>:/Image/addDev.png</normaloff>:/Image/addDev.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="tBtnBack">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>返回</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../image.qrc">
+         <normaloff>:/Image/back.png</normaloff>:/Image/back.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

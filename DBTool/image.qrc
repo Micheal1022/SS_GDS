@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Image/dataSearch.png</file>
+        <file>Image/offLineInfo.png</file>
+        <file>Image/app.ico</file>
+        <file>Image/file.png</file>
+        <file>Image/send.png</file>
+        <file>Image/back.png</file>
+        <file>Image/checked.png</file>
+        <file>Image/uncheck.png</file>
+        <file>Image/close.png</file>
+    </qresource>
+</RCC>

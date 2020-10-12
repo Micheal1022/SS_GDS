@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ViewWidget</class>
+ <widget class="QWidget" name="ViewWidget">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1352</width>
+    <height>702</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#ViewWidget{
+background-color: rgb(255, 255, 255);
+}
+
+QToolButton{
+font: 20pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+border:2px solid  rgb(0, 125, 165);
+border-radius:10px;
+background-color: rgb(0, 125, 165);
+}
+QToolButton:disabled{
+font: 20pt &quot;微软雅黑&quot;;
+color: rgb(255, 255, 255);
+border-color: rgb(180, 180, 180);
+background-color: rgb(180, 180, 180);
+}
+
+QTabWidget::pane { /* The tab widget frame */
+border-top: 2px solid  rgb(64, 87, 97);
+border: 2px solid  rgb(64, 87, 97);
+background-color: rgb(255, 255, 255);
+}
+
+QTabWidget::tab-bar {
+left: 10px; /* move to the right by 5px */
+}
+
+QTabBar::tab {
+font: 18pt &quot;微软雅黑&quot;;
+border:2px solid rgb(64, 87, 97);
+border-bottom-color: #C2C7CB; /* same as the pane color */
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+width: 390px;
+height: 30px;
+padding: 2px;
+}
+
+QTabBar::tab:selected {
+color: rgb(255, 255, 255);
+background-color:rgb(64, 87, 97);
+}
+
+QTabBar::tab:selected {
+border-color: #9B9B9B;
+border-bottom-color: #C2C7CB; /* same as pane color */
+}
+QTabBar::tab:!selected {
+margin-top: 2px; /* make non-selected tabs look smaller */
+background-color: rgb(255, 255, 255);
+}
+Line{
+border:1px solid  rgb(0, 125, 165);
+}
+
+
+
+
+
+
+
+
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>5</number>
+   </property>
+   <property name="leftMargin">
+    <number>5</number>
+   </property>
+   <property name="topMargin">
+    <number>5</number>
+   </property>
+   <property name="rightMargin">
+    <number>5</number>
+   </property>
+   <property name="bottomMargin">
+    <number>5</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>5</number>
+     </property>
+     <item>
+      <widget class="QTreeWidget" name="treeWidget">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>220</width>
+         <height>380</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>220</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QTreeWidget{
+font: 14pt &quot;微软雅黑&quot;;
+border:2px solid rgb(0,125,165);
+border-radius:10px;
+}
+QScrollBar:vertical{
+width:20px;
+background:rgba(0,0,0,0%);
+margin:0px,0px,0px,0px;
+padding-top:25px;   
+padding-bottom:25px;    
+}
+QScrollBar::handle:vertical{
+width:10px;
+background:rgba(0,0,0,25%);
+background:rgb(0,125,165);
+border-radius:5px;
+min-height:20px;
+}
+QScrollBar::handle:vertical:hover{
+width:10px;
+background:rgba(0,125,165,80%);
+border-radius:5px;
+min-height:20;
+}
+
+QScrollBar:horizontal {
+height:20px;
+background:rgba(0,0,0,0%);
+margin:0px,0px,0px,0px;
+padding-left:25px;   
+padding-right:25px; 
+}
+QScrollBar::handle:horizontal{
+height:10px;
+background:rgb(0,125,165);
+border-radius:5px;
+min-width:20px;
+}
+QScrollBar::handle:horizontal:hover{
+height:10px;
+background:rgba(0,125,165,80%);
+border-radius:5px;
+min-width:20;
+}
+
+QTreeView::item:hover {
+outline:0px;
+color: rgb(255, 255, 255);
+background:rgba(0,125,165,80%);
+border: 1px solid rgba(0,125,165,80%);
+border-radius:5px;
+}
+QTreeView::item:selected {
+outline:0px;
+color: rgb(255, 255, 255);
+background:rgb(0,125,165);
+border: 1px solid rgb(0,125,165);
+border-radius:5px;
+}
+</string>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAsNeeded</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAsNeeded</enum>
+       </property>
+       <attribute name="headerVisible">
+        <bool>false</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="tBtnUserLogin">
+       <property name="minimumSize">
+        <size>
+         <width>220</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>220</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> 用户登录</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../image.qrc">
+         <normaloff>:/Image/login.png</normaloff>:/Image/login.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="tBtnSysConf">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>220</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>220</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> 系统配置</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../image.qrc">
+         <normaloff>:/Image/tools.png</normaloff>:/Image/tools.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="tBtnRecord">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>220</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>220</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> 历史记录</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../image.qrc">
+         <normaloff>:/Image/dataSearch.png</normaloff>:/Image/dataSearch.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="tBtnQuitApp">
+       <property name="minimumSize">
+        <size>
+         <width>220</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>220</width>
+         <height>45</height>
+        </size>
+       </property>
+       <property name="text">
+        <string> 退出程序</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../image.qrc">
+         <normaloff>:/Image/quit.png</normaloff>:/Image/quit.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>60</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidgetBuild">
+     <property name="minimumSize">
+      <size>
+       <width>1115</width>
+       <height>690</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QStackedWidget{
+font: 20pt &quot;楷体&quot;;
+border:2px solid rgb(0,125,165);
+border-radius:10px;
+}</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

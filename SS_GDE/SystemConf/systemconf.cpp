@@ -89,7 +89,7 @@ void SystemConf::confHostList(QTableWidget *tableWidget)
             item = new QTableWidgetItem;
             item->setFont(ft);
             item->setTextAlignment(Qt::AlignCenter);
-            item->setTextColor(Qt::black);
+            item->setForeground(Qt::black);
             switch (column) {
             case S_NAME:
                 item->setText(pName);
@@ -219,7 +219,7 @@ void SystemConf::slotBtnAddHost()
     for (int column = 0;column < ui->tableWidget->columnCount();column++) {
         item = new QTableWidgetItem;
         item->setFont(ft);
-        item->setTextColor(Qt::black);
+        item->setForeground(Qt::black);
         item->setTextAlignment(Qt::AlignCenter);
         switch (column) {
         case S_NAME:

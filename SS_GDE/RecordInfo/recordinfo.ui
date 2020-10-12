@@ -60,7 +60,7 @@ padding-bottom:25px;
 QScrollBar::handle:vertical{
 width:10px;
 background:rgba(0,0,0,25%);
-background:rgba(0,125,165);
+background:rgb(0,125,165);
 border-radius:5px;
 min-height:20px;
 }

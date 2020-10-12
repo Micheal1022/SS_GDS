@@ -8,12 +8,12 @@
 #include <QStyleOptionGraphicsItem>
 #include <QGraphicsSceneMouseEvent>
 #include "includes.h"
-#define SIZE_WIDTH  40
-#define SIZE_HEIGHT SIZE_WIDTH
-#define X_POS   SIZE_WIDTH/20*7
-#define Y_POS   SIZE_WIDTH/20*9
-#define WIDTH   SIZE_WIDTH/20*9
-#define HEIGHT  SIZE_WIDTH/20*5
+#define WIDTH_SIZE  40
+#define SIZE_HEIGHT WIDTH_SIZE
+#define X_POS   WIDTH_SIZE/20*7
+#define Y_POS   WIDTH_SIZE/20*9
+#define WIDTH   WIDTH_SIZE/20*9
+#define HEIGHT  WIDTH_SIZE/20*5
 
 
 
@@ -103,7 +103,7 @@ void SensorItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option
     Q_UNUSED(option)
     Q_UNUSED(widget)
     //绘制图片
-    QRect rect(5, 5, SIZE_WIDTH, SIZE_HEIGHT);
+    QRect rect(5, 5, WIDTH_SIZE, SIZE_HEIGHT);
     QPixmap pixmap(":/Image/detector.png");
     painter->drawPixmap(rect,pixmap);
     //绘制矩形区域

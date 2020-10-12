@@ -645,7 +645,7 @@ void GraphicsView::showInfoList(QTableWidget *tableWidget, QList<QStringList> in
             item = new QTableWidgetItem;
             item->setFont(ft);
             item->setTextAlignment(Qt::AlignCenter);
-            item->setTextColor(QColor(0,0,0));
+            item->setForeground(QColor(0,0,0));
             item->setText(itemStr.at(column));
             tableWidget->setItem(row,column,item);
         }

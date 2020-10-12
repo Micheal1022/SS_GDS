@@ -26,6 +26,11 @@ QMAKE_TARGET_COPYRIGHT = "Copyright 2018-2020 The Qt Company Ltd. All rights res
 RC_LANG = 0x0004
 
 
+MOC_DIR = ./moc_dir
+UI_DIR  = ./ui_dir
+RCC_DIR = ./rcc_dir
+OBJECTS_DIR = ./object_dir
+
 TARGET = SS_GDS
 TEMPLATE = app
 
@@ -88,3 +93,5 @@ FORMS += \
 RESOURCES += \
     image.qrc
 
+TRANSLATIONS += \
+    SS_GDS_zh_CN.ts

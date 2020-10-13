@@ -86,12 +86,12 @@ void MainWindow::initConnect()
 void MainWindow::initWidegt()
 {
 #ifdef FULLSCREEN
-    showFullScreen();
+//    showFullScreen();
 #endif
 
 #ifdef BEVONE
     ui->tBtnLogo->setStyleSheet("border-image: url(:/Image/Bevone.png);");
-    ui->lbCompany->setText(tr("北京北元安达电子有限公司"));
+    ui->lbCompany->setText(tr("北京北元安达电子有限公司 "));
 #elif  SENSOR
     ui->tBtnLogo->setStyleSheet("border-image: url(:/Image/Sensor.png);");
     ui->lbCompany->setText(tr("西安盛赛尔电子有限公司 "));
@@ -110,7 +110,7 @@ void MainWindow::slotSystemConf()
 
 void MainWindow::slotRecordInfo()
 {
-   ui->stackedWidget->setCurrentIndex(2);
+    ui->stackedWidget->setCurrentIndex(2);
 }
 
 void MainWindow::slotUserLogin()

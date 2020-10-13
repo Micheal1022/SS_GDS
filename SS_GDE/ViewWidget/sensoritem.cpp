@@ -78,14 +78,14 @@ void SensorItem::setToolTipString()
 {
     QString toolTipStr1;
     if (m_idStr.toInt() < 10) {
-        toolTipStr1 = QString("编号:%1-00%2\n").arg(m_loopStr).arg(m_idStr);
+        toolTipStr1 = tr("编号:%1-00%2\n").arg(m_loopStr).arg(m_idStr);
     } else if (m_idStr.toInt() >= 10 && m_idStr.toInt() < 100) {
-        toolTipStr1 = QString("编号:%1-0%2\n").arg(m_loopStr).arg(m_idStr);
+        toolTipStr1 = tr("编号:%1-0%2\n").arg(m_loopStr).arg(m_idStr);
     } else if (m_idStr.toInt() >= 100) {
-        toolTipStr1 = QString("编号:%1-%2\n").arg(m_loopStr).arg(m_idStr);
+        toolTipStr1 = tr("编号:%1-%2\n").arg(m_loopStr).arg(m_idStr);
     }
-    QString toolTipStr2 = QString("类型:%1\n").arg(m_typeStr);
-    QString toolTipStr3 = QString("区域:%1").arg(m_areaStr);
+    QString toolTipStr2 = tr("类型:%1\n").arg(m_typeStr);
+    QString toolTipStr3 = tr("区域:%1").arg(m_areaStr);
     QString pToolTipStr = toolTipStr1+toolTipStr2+toolTipStr3;
     setToolTip(pToolTipStr);
 

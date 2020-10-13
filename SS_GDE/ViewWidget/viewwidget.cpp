@@ -106,7 +106,6 @@ void ViewWidget::initVariable()
 
 void ViewWidget::initConfNode()
 {
-
     QSqlDatabase db = SqlManager::openConnection();
     QList<QStringList> pHostList = SqlManager::getEnableHostList(db);
     SqlManager::closeConnection(db);
@@ -156,7 +155,7 @@ void ViewWidget::initConfNode()
                 if (0 != port.toInt() && false == path.isEmpty()) {
                     //添加树形根节点
                     QStringList pLoopString;
-                    pLoopString.append(QString("回路-%1").arg(loop));
+                    pLoopString.append(tr("回路-%1").arg(loop));
                     QTreeWidgetItem *pLoopItem =  new QTreeWidgetItem(pTreeRootItem,pLoopString);
                     pTreeRootItem->addChild(pLoopItem);
                     m_LoopItemList.append(pLoopItem);
@@ -205,7 +204,7 @@ void ViewWidget::slotUserLoginOK()
     ui->tBtnQuitApp->setEnabled(true);
     ui->tBtnRecord->setEnabled(true);
     ui->tBtnSysConf->setEnabled(true);
-    ui->tBtnUserLogin->setText(" 用户注销");
+    ui->tBtnUserLogin->setText(tr(" 用户注销"));
 }
 
 void ViewWidget::slotUserLogin()
@@ -217,7 +216,7 @@ void ViewWidget::slotUserLogin()
         ui->tBtnQuitApp->setEnabled(false);
         ui->tBtnRecord->setEnabled(false);
         ui->tBtnSysConf->setEnabled(false);
-        ui->tBtnUserLogin->setText(" 用户登录");
+        ui->tBtnUserLogin->setText(tr(" 用户登录"));
     }
 }
 

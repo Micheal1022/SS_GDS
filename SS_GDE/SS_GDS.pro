@@ -60,7 +60,6 @@ SOURCES += \
     MsgBox/questbox.cpp \
     ViewWidget/udpthread.cpp \
     ViewWidget/sensoriteminfo.cpp \
-    ViewWidget/dbthead.cpp \
     UserLgoin/userlogin.cpp
 
 HEADERS += \
@@ -76,7 +75,6 @@ HEADERS += \
     MsgBox/questbox.h \
     ViewWidget/udpthread.h \
     ViewWidget/sensoriteminfo.h \
-    ViewWidget/dbthead.h \
     UserLgoin/userlogin.h \
     includes.h
 

@@ -44,7 +44,7 @@ private:
 
     void analysisData(QByteArray hostData);
     void setItem(QGraphicsScene *scene, QString loopStr, QString idStr, QString typeStr,QString stateStr);
-    void setNodeInfoZoom(QString loop, QString id, QPair<qreal, qreal> pox, QString scale, QString path);
+    void setNodeInfoZoom(QList<SensorItemInfo> itemInfoList, QList<QPair<qreal, qreal>> poxList, QStringList scaleList, QString path);
     void showInfoList(QTableWidget *tableWidget, QList<QStringList> infoList);
     void delStringList(QList<QStringList> &infoList, int loop, int Id, int state);
     int  findItemIndex(QList<SensorItemInfo> itemInfoList, QString loop,QString id);

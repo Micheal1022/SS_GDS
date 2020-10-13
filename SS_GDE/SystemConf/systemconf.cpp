@@ -103,10 +103,10 @@ void SystemConf::confHostList(QTableWidget *tableWidget)
             case S_ABLE:
                 item->setFlags(Qt::NoItemFlags);
                 if (pAble.toInt() == 1) {
-                    item->setText("启用");
+                    item->setText(tr("启用"));
                     item->setCheckState(Qt::Checked);
                 } else {
-                    item->setText("禁用");
+                    item->setText(tr("禁用"));
                     item->setCheckState(Qt::Unchecked);
                 }
                 break;
@@ -189,7 +189,7 @@ void SystemConf::initTableWidget(QTableWidget *tableWidget)
     tableWidget->setColumnWidth(S_NAME,   250);
     tableWidget->setColumnWidth(S_HOST,   250);
     tableWidget->setColumnWidth(S_PATH,   90);
-    tableWidget->setColumnWidth(S_ABLE,   80);
+    tableWidget->setColumnWidth(S_ABLE,   120);
     tableWidget->setColumnWidth(S_PORT_1, 90);
     tableWidget->setColumnWidth(S_PATH_1, 90);
     tableWidget->setColumnWidth(S_PORT_2, 90);
@@ -336,7 +336,7 @@ void SystemConf::slotBtnSaveHost()
             pStringList.append(pName);
             pStringList.append(pHost);
             pStringList.append(pPath);
-            if (pAble == QString("启用")) {
+            if (pAble == tr("启用")) {
                 pStringList.append(QString("1"));
             } else {
                 pStringList.append(QString("0"));

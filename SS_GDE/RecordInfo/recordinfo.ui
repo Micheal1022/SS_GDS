@@ -50,6 +50,18 @@ font: 18pt &quot;微软雅黑&quot;;
 border-radius:5px;
 border:1px solid rgb(0, 125, 165);
 }
+QDateTimeEdit::up-button{
+top:2px;
+right:2px;
+width: 30px;
+height: 26px;				
+}
+QDateTimeEdit::down-button{
+bottom:2px;
+right:2px;
+width: 30px;
+height: 26px;				
+}
 QScrollBar:vertical{
 width:20px;
 background:rgba(0,0,0,0%);
@@ -239,6 +251,12 @@ border-radius:10px;
        </item>
        <item>
         <widget class="QToolButton" name="tBtnManual">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>70</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>120</width>
@@ -247,7 +265,7 @@ border-radius:10px;
          </property>
          <property name="maximumSize">
           <size>
-           <width>120</width>
+           <width>190</width>
            <height>60</height>
           </size>
          </property>
@@ -267,6 +285,12 @@ border-radius:10px;
        </item>
        <item>
         <widget class="QToolButton" name="tBtnAuto">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>90</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>120</width>
@@ -275,7 +299,7 @@ border-radius:10px;
          </property>
          <property name="maximumSize">
           <size>
-           <width>120</width>
+           <width>210</width>
            <height>60</height>
           </size>
          </property>
@@ -309,7 +333,7 @@ border-radius:10px;
       </spacer>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1,1,1,1,0">
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,0,0">
        <property name="spacing">
         <number>10</number>
        </property>
@@ -318,6 +342,12 @@ border-radius:10px;
        </property>
        <item>
         <widget class="QToolButton" name="tBtnCheck">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>30</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>110</width>
@@ -326,7 +356,7 @@ border-radius:10px;
          </property>
          <property name="maximumSize">
           <size>
-           <width>110</width>
+           <width>140</width>
            <height>60</height>
           </size>
          </property>
@@ -350,6 +380,12 @@ border-radius:10px;
        </item>
        <item>
         <widget class="QToolButton" name="tBtnAllDel">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>30</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>110</width>
@@ -358,7 +394,7 @@ border-radius:10px;
          </property>
          <property name="maximumSize">
           <size>
-           <width>110</width>
+           <width>140</width>
            <height>60</height>
           </size>
          </property>
@@ -382,6 +418,12 @@ border-radius:10px;
        </item>
        <item>
         <widget class="QToolButton" name="tBtnExport">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>30</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>110</width>
@@ -390,7 +432,7 @@ border-radius:10px;
          </property>
          <property name="maximumSize">
           <size>
-           <width>110</width>
+           <width>140</width>
            <height>60</height>
           </size>
          </property>
@@ -414,6 +456,12 @@ border-radius:10px;
        </item>
        <item>
         <widget class="QToolButton" name="tBtnPageUp">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>40</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>110</width>
@@ -422,7 +470,7 @@ border-radius:10px;
          </property>
          <property name="maximumSize">
           <size>
-           <width>110</width>
+           <width>150</width>
            <height>60</height>
           </size>
          </property>
@@ -449,6 +497,12 @@ border-radius:10px;
          <property name="enabled">
           <bool>true</bool>
          </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>80</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>110</width>
@@ -457,7 +511,7 @@ border-radius:10px;
          </property>
          <property name="maximumSize">
           <size>
-           <width>110</width>
+           <width>190</width>
            <height>60</height>
           </size>
          </property>
@@ -484,6 +538,12 @@ border-radius:10px;
          <property name="enabled">
           <bool>true</bool>
          </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+           <horstretch>30</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>110</width>
@@ -492,7 +552,7 @@ border-radius:10px;
          </property>
          <property name="maximumSize">
           <size>
-           <width>110</width>
+           <width>140</width>
            <height>60</height>
           </size>
          </property>

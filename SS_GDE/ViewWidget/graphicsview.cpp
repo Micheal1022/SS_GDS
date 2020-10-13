@@ -6,7 +6,6 @@
 #include <QSqlQuery>
 #include <QThread>
 #include <QSqlError>
-#include "dbthead.h"
 #include <QGraphicsSceneContextMenuEvent>
 #include "SqlManager/sqlmanager.h"
 #define POS 150
@@ -53,13 +52,6 @@ void GraphicsView::initWidget()
     ui->tBtnAlignLeft->setEnabled(false);
     ui->tBtnAlignRight->setEnabled(false);
     ui->tBtnAlignBottom->setEnabled(false);
-
-    DBThead *pDbThread = new DBThead;
-    QThread *pThread = new QThread;
-    pDbThread->moveToThread(pThread);
-    pThread->start();
-    connect(this,SIGNAL(sigNodeInfoZoom(QList<SensorItemInfo>,QList<QPair<qreal,qreal>>,QStringList,QString)),
-            pDbThread,SLOT(slotNodeInfoZoom(QList<SensorItemInfo>,QList<QPair<qreal,qreal> >,QStringList,QString)));
 
     m_infoTimer = new QTimer;
     connect(m_infoTimer,SIGNAL(timeout()),this,SLOT(slotInfoTimeOut()));
@@ -151,9 +143,7 @@ void GraphicsView::confView(QList<SensorItemInfo> itemInfoList, QString loop, QS
             pItem->setScale(itemInfoList.value(ind).m_zoom);
         }
         m_scene->addItem(pItem);
-        //m_itemList.append(pItem);
     }
-
     m_selectItemList = m_scene->items();
 
     UdpThread *udpThread = new UdpThread(QHostAddress(hostIP) ,port.toUInt());
@@ -217,7 +207,7 @@ void GraphicsView::setItem(QGraphicsScene *scene, QString loopStr, QString idStr
     }
 }
 
-void GraphicsView::setNodeInfoZoom(QString loop, QString id, QPair<qreal, qreal> pox, QString scale, QString path)
+void GraphicsView::setNodeInfoZoom(QList<SensorItemInfo> itemInfoList, QList<QPair<qreal, qreal> > poxList, QStringList scaleList, QString path)
 {
     QSqlDatabase database;
     if (QSqlDatabase::contains("qt_sql_default_connection")) {
@@ -230,15 +220,21 @@ void GraphicsView::setNodeInfoZoom(QString loop, QString id, QPair<qreal, qreal>
     if (!database.open()) {
         qDebug() << "Error: Failed to connect database."<<database.lastError();
     } else {
-        qDebug() << "Succeed to connect database : loop "<<loop;
+        //qDebug() << "Succeed to connect database : loop "<<loop;
     }
+    qDebug()<<"path -----> "<<path;
 
     QSqlQuery query(database);
-
-    QString sqlQuery = QString("update NODELIST set ZOOM = %1,POS_X = %2,POS_Y = %3 where LOOP = %4 and ID = %5;").\
-            arg(scale).arg(QString::number(pox.first)).arg(QString::number(pox.second)).arg(loop).arg(id);
-    qDebug()<<sqlQuery;
-    query.exec(sqlQuery);
+    database.transaction();
+    for (int i = 0; i < itemInfoList.count(); i++) {
+        QPair<qreal, qreal> pPairPos = poxList.value(i);
+        SensorItemInfo pItemInfo = itemInfoList.value(i);
+        QString sqlQuery = QString("update NODELIST set ZOOM = %1,POS_X = %2,POS_Y = %3 where LOOP = %4 and ID = %5;").\
+                arg(scaleList.value(i)).arg(QString::number(pPairPos.first)).arg(QString::number(pPairPos.second)).arg(pItemInfo.m_loopStr).arg(pItemInfo.m_idStr);
+        //qDebug()<<sqlQuery;
+        query.exec(sqlQuery);
+    }
+    database.commit();
     query.finish();
     query.clear();
     database.close();
@@ -340,7 +336,6 @@ void GraphicsView::slotBtnEdit()
 void GraphicsView::slotBtnSave()
 {
     ui->tBtnEdit->setText(tr("编辑"));
-    //ui->tBtnEdit->setEnabled(true);
     ui->tBtnSave->setEnabled(false);
     ui->tBtnZoomIn->setEnabled(false);
     ui->tBtnRestore->setEnabled(false);
@@ -358,9 +353,11 @@ void GraphicsView::slotBtnSave()
     QList<QPair<qreal, qreal>> poxList;
     //获取item的列表，列表的顺序是最小的位置保存最上层的item;
     QList<QGraphicsItem *> itemList = m_scene->items();
-    for (int i = 0; i < itemList.count(); i++) {
-        SensorItem* pItem = qgraphicsitem_cast<SensorItem*>(itemList.value(itemList.count()- 1 - i));
-        if (itemList.count()- 1 - i == 0) {
+    int pItemCount = itemList.count();
+    for (int index = 1; index < pItemCount; index++) {
+        int pCurrentIndex = pItemCount - 1 - index;
+        if (pCurrentIndex == 0) {
+            QGraphicsItem *pItem = itemList.value(pCurrentIndex);
             //查找背景图片，保存缩放等级
             pScale = pItem->scale();
             QSqlDatabase pSqlDatabase = SqlManager::openConnection();
@@ -368,6 +365,7 @@ void GraphicsView::slotBtnSave()
             SqlManager::closeConnection(pSqlDatabase);
         } else {
             //查找节点土元，保存缩放等级
+            SensorItem *pItem = qgraphicsitem_cast<SensorItem*>(itemList.value(pCurrentIndex));
             QPointF pScenePos = pItem->scenePos();
             pScale = pItem->scale();
             QPair<qreal,qreal> pPairPos;
@@ -375,12 +373,13 @@ void GraphicsView::slotBtnSave()
             pPairPos.second= pScenePos.y();
             poxList.append(pPairPos);
             pScaleList.append(QString::number(pScale));
+
+            pItem->setFlag(QGraphicsItem::ItemIsMovable,   false);
+            pItem->setFlag(QGraphicsItem::ItemIsFocusable, false);
+            pItem->setFlag(QGraphicsItem::ItemIsSelectable,false);
         }
-        pItem->setFlag(QGraphicsItem::ItemIsMovable,   false);
-        pItem->setFlag(QGraphicsItem::ItemIsFocusable, false);
-        pItem->setFlag(QGraphicsItem::ItemIsSelectable,false);
     }
-    emit sigNodeInfoZoom(m_itemInfoList, poxList, pScaleList,m_dbPaht);
+    setNodeInfoZoom(m_itemInfoList, poxList, pScaleList,m_dbPaht);
 }
 
 void GraphicsView::analysisData(QByteArray hostData)

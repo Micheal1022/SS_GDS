@@ -121,7 +121,7 @@ color:rgb(0, 0, 0);
       <number>5</number>
      </property>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,1,1,1">
+      <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="0,0,0,0">
        <property name="spacing">
         <number>30</number>
        </property>
@@ -136,7 +136,7 @@ color:rgb(0, 0, 0);
          <item>
           <widget class="QLabel" name="lbNormal">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -149,7 +149,7 @@ color:rgb(0, 0, 0);
            </property>
            <property name="maximumSize">
             <size>
-             <width>40</width>
+             <width>100</width>
              <height>50</height>
             </size>
            </property>
@@ -203,7 +203,7 @@ color:rgb(0, 0, 0);
          <item>
           <widget class="QLabel" name="lbOffLine">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -216,7 +216,7 @@ color:rgb(0, 0, 0);
            </property>
            <property name="maximumSize">
             <size>
-             <width>40</width>
+             <width>100</width>
              <height>50</height>
             </size>
            </property>
@@ -264,7 +264,7 @@ color:rgb(0, 0, 0);
          <item>
           <widget class="QLabel" name="lbError">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -277,7 +277,7 @@ color:rgb(0, 0, 0);
            </property>
            <property name="maximumSize">
             <size>
-             <width>40</width>
+             <width>100</width>
              <height>50</height>
             </size>
            </property>
@@ -325,7 +325,7 @@ color:rgb(0, 0, 0);
          <item>
           <widget class="QLabel" name="lbAlarm">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -338,7 +338,7 @@ color:rgb(0, 0, 0);
            </property>
            <property name="maximumSize">
             <size>
-             <width>40</width>
+             <width>100</width>
              <height>50</height>
             </size>
            </property>
@@ -400,6 +400,12 @@ color:rgb(0, 0, 0);
        </property>
        <item>
         <widget class="QToolButton" name="tBtnEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>100</width>
@@ -408,7 +414,7 @@ color:rgb(0, 0, 0);
          </property>
          <property name="maximumSize">
           <size>
-           <width>100</width>
+           <width>130</width>
            <height>50</height>
           </size>
          </property>
@@ -432,6 +438,12 @@ color:rgb(0, 0, 0);
        </item>
        <item>
         <widget class="QToolButton" name="tBtnSave">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>100</width>
@@ -440,7 +452,7 @@ color:rgb(0, 0, 0);
          </property>
          <property name="maximumSize">
           <size>
-           <width>100</width>
+           <width>130</width>
            <height>50</height>
           </size>
          </property>
@@ -464,15 +476,21 @@ color:rgb(0, 0, 0);
        </item>
        <item>
         <widget class="QToolButton" name="tBtnRestore">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
-           <width>100</width>
+           <width>120</width>
            <height>50</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>100</width>
+           <width>130</width>
            <height>50</height>
           </size>
          </property>
@@ -496,6 +514,12 @@ color:rgb(0, 0, 0);
        </item>
        <item>
         <widget class="QToolButton" name="tBtnZoomIn">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>30</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>100</width>
@@ -504,7 +528,7 @@ color:rgb(0, 0, 0);
          </property>
          <property name="maximumSize">
           <size>
-           <width>100</width>
+           <width>130</width>
            <height>50</height>
           </size>
          </property>
@@ -528,6 +552,12 @@ color:rgb(0, 0, 0);
        </item>
        <item>
         <widget class="QToolButton" name="tBtnZoomOut">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>30</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>100</width>
@@ -536,7 +566,7 @@ color:rgb(0, 0, 0);
          </property>
          <property name="maximumSize">
           <size>
-           <width>100</width>
+           <width>130</width>
            <height>50</height>
           </size>
          </property>
@@ -563,6 +593,12 @@ color:rgb(0, 0, 0);
          <property name="enabled">
           <bool>true</bool>
          </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>120</width>
@@ -571,7 +607,7 @@ color:rgb(0, 0, 0);
          </property>
          <property name="maximumSize">
           <size>
-           <width>120</width>
+           <width>170</width>
            <height>50</height>
           </size>
          </property>
@@ -595,6 +631,12 @@ color:rgb(0, 0, 0);
        </item>
        <item>
         <widget class="QToolButton" name="tBtnAlignRight">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>120</width>
@@ -603,7 +645,7 @@ color:rgb(0, 0, 0);
          </property>
          <property name="maximumSize">
           <size>
-           <width>120</width>
+           <width>170</width>
            <height>50</height>
           </size>
          </property>
@@ -627,6 +669,12 @@ color:rgb(0, 0, 0);
        </item>
        <item>
         <widget class="QToolButton" name="tBtnAlignTop">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>120</width>
@@ -635,7 +683,7 @@ color:rgb(0, 0, 0);
          </property>
          <property name="maximumSize">
           <size>
-           <width>120</width>
+           <width>170</width>
            <height>50</height>
           </size>
          </property>
@@ -659,6 +707,12 @@ color:rgb(0, 0, 0);
        </item>
        <item>
         <widget class="QToolButton" name="tBtnAlignBottom">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="minimumSize">
           <size>
            <width>120</width>
@@ -667,7 +721,7 @@ color:rgb(0, 0, 0);
          </property>
          <property name="maximumSize">
           <size>
-           <width>120</width>
+           <width>180</width>
            <height>50</height>
           </size>
          </property>

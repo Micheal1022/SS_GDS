@@ -32,59 +32,59 @@ State</translation>
 State</translation>
     </message>
     <message>
-        <location filename="ViewWidget/graphicsview.ui" line="416"/>
+        <location filename="ViewWidget/graphicsview.ui" line="422"/>
         <location filename="ViewWidget/graphicsview.cpp" line="319"/>
         <location filename="ViewWidget/graphicsview.cpp" line="342"/>
         <source>编辑</source>
         <translation>Edit</translation>
     </message>
     <message>
-        <location filename="ViewWidget/graphicsview.ui" line="448"/>
+        <location filename="ViewWidget/graphicsview.ui" line="460"/>
         <source>保存</source>
         <translation>Save</translation>
     </message>
     <message>
-        <location filename="ViewWidget/graphicsview.ui" line="480"/>
+        <location filename="ViewWidget/graphicsview.ui" line="498"/>
         <source>恢复</source>
         <translation>Restore</translation>
     </message>
     <message>
-        <location filename="ViewWidget/graphicsview.ui" line="512"/>
+        <location filename="ViewWidget/graphicsview.ui" line="536"/>
         <source>放大</source>
         <translation>ZoomOut</translation>
     </message>
     <message>
-        <location filename="ViewWidget/graphicsview.ui" line="544"/>
+        <location filename="ViewWidget/graphicsview.ui" line="574"/>
         <source>缩小</source>
         <translation>ZoomIn</translation>
     </message>
     <message>
-        <location filename="ViewWidget/graphicsview.ui" line="579"/>
+        <location filename="ViewWidget/graphicsview.ui" line="615"/>
         <source>左对齐</source>
         <translation>AlignLeft</translation>
     </message>
     <message>
-        <location filename="ViewWidget/graphicsview.ui" line="611"/>
+        <location filename="ViewWidget/graphicsview.ui" line="653"/>
         <source>右对齐</source>
         <translation>AlignRight</translation>
     </message>
     <message>
-        <location filename="ViewWidget/graphicsview.ui" line="643"/>
+        <location filename="ViewWidget/graphicsview.ui" line="691"/>
         <source>顶对齐</source>
         <translation>AlignTop</translation>
     </message>
     <message>
-        <location filename="ViewWidget/graphicsview.ui" line="675"/>
+        <location filename="ViewWidget/graphicsview.ui" line="729"/>
         <source>底对齐</source>
         <translation>AlignBottom</translation>
     </message>
     <message>
-        <location filename="ViewWidget/graphicsview.ui" line="734"/>
+        <location filename="ViewWidget/graphicsview.ui" line="788"/>
         <source>报警信息</source>
         <translation>AlarmInfo</translation>
     </message>
     <message>
-        <location filename="ViewWidget/graphicsview.ui" line="797"/>
+        <location filename="ViewWidget/graphicsview.ui" line="851"/>
         <source>故障信息</source>
         <translation>ErrorInfo</translation>
     </message>
@@ -199,7 +199,7 @@ State</translation>
     <message>
         <location filename="mainwindow.ui" line="192"/>
         <source>2020/10/02 15:25:23</source>
-        <translation>2020/10/02 1525:23</translation>
+        <translation>2020/10/02 15:25:23</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="25"/>
@@ -238,13 +238,14 @@ State</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="94"/>
-        <source>北京北元安达电子有限公司</source>
-        <translation type="unfinished"></translation>
+        <source>北京北元安达电子有限公司 </source>
+        <oldsource>北京北元安达电子有限公司</oldsource>
+        <translation>BEIJING BEVONE ELECTRONICS CO.LTD </translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="97"/>
         <source>西安盛赛尔电子有限公司 </source>
-        <translation type="unfinished"></translation>
+        <translation>Xi`an System Sensor Electronics.LTD </translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="134"/>
@@ -293,144 +294,146 @@ State</translation>
         <translation>Form</translation>
     </message>
     <message>
-        <location filename="RecordInfo/recordinfo.ui" line="134"/>
+        <location filename="RecordInfo/recordinfo.ui" line="146"/>
         <source>开始
 时间</source>
-        <translation type="unfinished"></translation>
+        <translation>Start
+Time</translation>
     </message>
     <message>
-        <location filename="RecordInfo/recordinfo.ui" line="176"/>
-        <location filename="RecordInfo/recordinfo.ui" line="236"/>
+        <location filename="RecordInfo/recordinfo.ui" line="188"/>
+        <location filename="RecordInfo/recordinfo.ui" line="248"/>
         <source>yyyy/MM/dd hh:mm:ss</source>
-        <translation type="unfinished"></translation>
+        <translation>yyyy/MM/dd hh:mm:ss</translation>
     </message>
     <message>
-        <location filename="RecordInfo/recordinfo.ui" line="201"/>
+        <location filename="RecordInfo/recordinfo.ui" line="213"/>
         <source>结束
 时间</source>
-        <translation type="unfinished"></translation>
+        <translation>End
+Time</translation>
     </message>
     <message>
-        <location filename="RecordInfo/recordinfo.ui" line="255"/>
+        <location filename="RecordInfo/recordinfo.ui" line="273"/>
         <source>手动调时</source>
-        <translation type="unfinished"></translation>
+        <translation>Manual timing</translation>
     </message>
     <message>
-        <location filename="RecordInfo/recordinfo.ui" line="283"/>
+        <location filename="RecordInfo/recordinfo.ui" line="307"/>
         <source>自动调时</source>
-        <translation type="unfinished"></translation>
+        <translation>Automatic timing</translation>
     </message>
     <message>
-        <location filename="RecordInfo/recordinfo.ui" line="334"/>
+        <location filename="RecordInfo/recordinfo.ui" line="364"/>
         <source>查询</source>
-        <translation type="unfinished"></translation>
+        <translation>Query</translation>
     </message>
     <message>
-        <location filename="RecordInfo/recordinfo.ui" line="366"/>
+        <location filename="RecordInfo/recordinfo.ui" line="402"/>
         <source>删除</source>
-        <translation type="unfinished"></translation>
+        <translation>Delete</translation>
     </message>
     <message>
-        <location filename="RecordInfo/recordinfo.ui" line="398"/>
+        <location filename="RecordInfo/recordinfo.ui" line="440"/>
         <source>导出</source>
-        <translation type="unfinished"></translation>
+        <translation>Export</translation>
     </message>
     <message>
-        <location filename="RecordInfo/recordinfo.ui" line="430"/>
+        <location filename="RecordInfo/recordinfo.ui" line="478"/>
         <source>上翻</source>
-        <translation type="unfinished"></translation>
+        <translation>Turn up</translation>
     </message>
     <message>
-        <location filename="RecordInfo/recordinfo.ui" line="465"/>
+        <location filename="RecordInfo/recordinfo.ui" line="519"/>
         <source>下翻</source>
-        <translation type="unfinished"></translation>
+        <translation>Turn down</translation>
     </message>
     <message>
-        <location filename="RecordInfo/recordinfo.ui" line="500"/>
+        <location filename="RecordInfo/recordinfo.ui" line="560"/>
         <source>返回</source>
-        <translation type="unfinished">Back</translation>
+        <translation>Back</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="80"/>
         <source>主机名称</source>
-        <translation type="unfinished">HostName</translation>
+        <translation>Host Name</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="80"/>
         <source>主机IP</source>
-        <translation type="unfinished"></translation>
+        <translation>Host IP</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="80"/>
         <source>主机回路</source>
-        <translation type="unfinished"></translation>
+        <translation>Host Loop</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="80"/>
         <source>ID编号</source>
-        <translation type="unfinished"></translation>
+        <translation>ID NO</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="80"/>
         <source>探测器类型</source>
-        <translation type="unfinished"></translation>
+        <translation>Sensor Type</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="80"/>
         <source>事件类型</source>
-        <translation type="unfinished">EventType</translation>
+        <translation>Event Type</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="80"/>
         <source>事件时间</source>
-        <translation type="unfinished">EventTime</translation>
+        <translation>Event Time</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="80"/>
         <source>安装区域</source>
-        <translation type="unfinished"></translation>
+        <translation>Installation Area</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="164"/>
         <source>组合式电气火灾探测器</source>
-        <translation type="unfinished"></translation>
+        <translation>L12T4</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="167"/>
         <source>一体式电气火灾探测器</source>
-        <translation type="unfinished"></translation>
+        <translation>L4t1</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="214"/>
         <source> 记录删除</source>
-        <translation type="unfinished"></translation>
+        <translation> Del Data</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="214"/>
         <source>你确定要删除全部的记录信息吗？</source>
-        <translation type="unfinished"></translation>
+        <translation>Are you sure you want to delete all data?</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="214"/>
         <source>确定</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="214"/>
         <source>取消</source>
-        <translation type="unfinished">Cancel</translation>
+        <translation>Cancel</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="232"/>
         <location filename="RecordInfo/recordinfo.cpp" line="239"/>
         <location filename="RecordInfo/recordinfo.cpp" line="271"/>
         <source>记录导出</source>
-        <translation type="unfinished"></translation>
+        <translation>Data export</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="232"/>
         <source>没有可用的数据,无法导出!!!</source>
-        <translation type="unfinished"></translation>
+        <translation>There is no data to export!!!</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="232"/>
@@ -439,48 +442,48 @@ State</translation>
         <location filename="RecordInfo/recordinfo.cpp" line="281"/>
         <location filename="RecordInfo/recordinfo.cpp" line="302"/>
         <source>关闭</source>
-        <translation type="unfinished"></translation>
+        <translation>close</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="236"/>
         <source>历史记录_</source>
-        <translation type="unfinished"></translation>
+        <translation>Database</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="237"/>
         <source>历史记录导出...</source>
-        <translation type="unfinished"></translation>
+        <translation>Data export...</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="237"/>
         <source>EXCEL files(*.xls);;HTML-Files(*.txt);;</source>
-        <translation type="unfinished"></translation>
+        <translation>EXCEL files(*.xls);;HTML-Files(*.txt);;</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="239"/>
         <source>路径不存在,无法导出!!!</source>
-        <translation type="unfinished"></translation>
+        <translation>The path does not exist. The file cannot be exported!!!</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="271"/>
         <source>已经将所有数据导出</source>
-        <translation type="unfinished"></translation>
+        <translation>All data has been exported</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="281"/>
         <location filename="RecordInfo/recordinfo.cpp" line="302"/>
         <source>操作提示</source>
-        <translation type="unfinished"></translation>
+        <translation>SystemTip</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="281"/>
         <source>已经到达记录底部.</source>
-        <translation type="unfinished"></translation>
+        <translation>It&apos;s at the bottom.</translation>
     </message>
     <message>
         <location filename="RecordInfo/recordinfo.cpp" line="302"/>
         <source>已经到达数据顶部.</source>
-        <translation type="unfinished"></translation>
+        <translation>It&apos;s at the top.</translation>
     </message>
 </context>
 <context>
@@ -540,6 +543,39 @@ State</translation>
         <source>3A</source>
         <translation>3A</translation>
     </message>
+    <message>
+        <location filename="ViewWidget/sensoritem.cpp" line="81"/>
+        <source>编号:%1-00%2
+</source>
+        <translation>ID:%1-00%2
+</translation>
+    </message>
+    <message>
+        <location filename="ViewWidget/sensoritem.cpp" line="83"/>
+        <source>编号:%1-0%2
+</source>
+        <translation>ID:%1-0%2
+</translation>
+    </message>
+    <message>
+        <location filename="ViewWidget/sensoritem.cpp" line="85"/>
+        <source>编号:%1-%2
+</source>
+        <translation>ID:%1-%2
+</translation>
+    </message>
+    <message>
+        <location filename="ViewWidget/sensoritem.cpp" line="87"/>
+        <source>类型:%1
+</source>
+        <translation>Type:%1
+</translation>
+    </message>
+    <message>
+        <location filename="ViewWidget/sensoritem.cpp" line="88"/>
+        <source>区域:%1</source>
+        <translation>Area:%1</translation>
+    </message>
 </context>
 <context>
     <name>SystemConf</name>
@@ -572,7 +608,7 @@ State</translation>
         <location filename="SystemConf/systemconf.cpp" line="182"/>
         <location filename="SystemConf/systemconf.cpp" line="226"/>
         <source>主机名称</source>
-        <translation>HostName</translation>
+        <translation>Host Name</translation>
     </message>
     <message>
         <location filename="SystemConf/systemconf.cpp" line="182"/>
@@ -736,11 +772,13 @@ State</translation>
         <translation>Saved Successfully!</translation>
     </message>
     <message>
+        <location filename="SystemConf/systemconf.cpp" line="106"/>
         <location filename="SystemConf/systemconf.cpp" line="379"/>
         <source>启用</source>
         <translation>Enable</translation>
     </message>
     <message>
+        <location filename="SystemConf/systemconf.cpp" line="109"/>
         <location filename="SystemConf/systemconf.cpp" line="382"/>
         <source>禁用</source>
         <translation>Disable</translation>
@@ -804,24 +842,35 @@ State</translation>
         <translation>Form</translation>
     </message>
     <message>
-        <location filename="ViewWidget/viewwidget.ui" line="226"/>
+        <location filename="ViewWidget/viewwidget.ui" line="230"/>
+        <location filename="ViewWidget/viewwidget.cpp" line="220"/>
         <source> 用户登录</source>
         <translation> UserLogin</translation>
     </message>
     <message>
-        <location filename="ViewWidget/viewwidget.ui" line="261"/>
+        <location filename="ViewWidget/viewwidget.ui" line="265"/>
         <source> 系统配置</source>
         <translation> SystemConf</translation>
     </message>
     <message>
-        <location filename="ViewWidget/viewwidget.ui" line="296"/>
+        <location filename="ViewWidget/viewwidget.ui" line="300"/>
         <source> 历史记录</source>
-        <translation> SystemRecord</translation>
+        <translation> SystemData</translation>
     </message>
     <message>
-        <location filename="ViewWidget/viewwidget.ui" line="328"/>
+        <location filename="ViewWidget/viewwidget.ui" line="332"/>
         <source> 退出程序</source>
         <translation> QuitApp</translation>
+    </message>
+    <message>
+        <location filename="ViewWidget/viewwidget.cpp" line="159"/>
+        <source>回路-%1</source>
+        <translation>Loop-%1</translation>
+    </message>
+    <message>
+        <location filename="ViewWidget/viewwidget.cpp" line="208"/>
+        <source> 用户注销</source>
+        <translation> UserLogout</translation>
     </message>
 </context>
 </TS>

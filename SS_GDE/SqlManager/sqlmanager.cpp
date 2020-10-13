@@ -253,7 +253,7 @@ bool SqlManager::insertHostList(QSqlDatabase db, QStringList stringList)
 
 
     QString sqlQuery = QString("replace into HOSTINFO values('%1','%2','%3',%4,"
-                               "%5, '%6' , %7,'%8' ,"
+                               "%5, '%6' ,%7,'%8' ,"
                                "%9, '%10',%11,'%12',"
                                "%13,'%14',%15,'%16',"
                                "%17,'%18',%19,'%20');").\
@@ -262,7 +262,7 @@ bool SqlManager::insertHostList(QSqlDatabase db, QStringList stringList)
             arg(pPort_3).arg(pPaht_3).arg(pPort_4).arg(pPath_4).\
             arg(pPort_5).arg(pPath_5).arg(pPort_6).arg(pPath_6).\
             arg(pPort_7).arg(pPath_7).arg(pPort_8).arg(pPath_8);
-    //qDebug()<<"sqlQuery --->"<<sqlQuery;
+    qDebug()<<"sqlQuery --->"<<sqlQuery;
     QSqlQuery query(db);
     if (!query.exec(sqlQuery)) {
         return false;

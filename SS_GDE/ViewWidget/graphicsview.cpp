@@ -222,7 +222,7 @@ void GraphicsView::setNodeInfoZoom(QList<SensorItemInfo> itemInfoList, QList<QPa
     } else {
         //qDebug() << "Succeed to connect database : loop "<<loop;
     }
-    qDebug()<<"path -----> "<<path;
+    //qDebug()<<"path -----> "<<path;
 
     QSqlQuery query(database);
     database.transaction();

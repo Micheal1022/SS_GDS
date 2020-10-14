@@ -21,7 +21,6 @@ signals:
     void sigSaveOk();
     void sigViewWidget();
 private:
-    void delAllConf();
     void initWidget();
     void initConnect();
     void initVariable();

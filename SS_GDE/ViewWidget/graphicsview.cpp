@@ -344,6 +344,7 @@ void GraphicsView::slotBtnSave()
     ui->tBtnAlignLeft->setEnabled(false);
     ui->tBtnAlignRight->setEnabled(false);
     ui->tBtnAlignBottom->setEnabled(false);
+    //保存视图缩放比例
     QSqlDatabase pSqlDatabase = SqlManager::openConnection();
     SqlManager::setViewZoom(pSqlDatabase,m_loop,QString::number(m_viewScale),m_hostIP);
     SqlManager::closeConnection(pSqlDatabase);
@@ -581,7 +582,7 @@ void GraphicsView::analysisData(QByteArray hostData)
         }
         if (false == m_itemInfoList.value(index).m_alarmFlag) {
             m_itemInfoList[index].m_alarmFlag = true;
-            QString pStateStr = QString("探测器报警");
+            QString pStateStr = tr("探测器报警");
             QString pAreaStr  = m_itemInfoList.value(index).m_areaStr;
             //实时报警列表
             pInfoList<<m_hostName<<pLoopStr<<pIDStr<<pStateStr<<pDateTimeStr;
@@ -601,7 +602,7 @@ void GraphicsView::analysisData(QByteArray hostData)
         }
         if (false == m_itemInfoList.value(index).m_offLineFlag) {
             m_itemInfoList[index].m_offLineFlag = true;
-            QString pStateStr = QString("通讯故障");
+            QString pStateStr = tr("通讯故障");
             QString pAreaStr  = m_itemInfoList.value(index).m_areaStr;
             //实时掉线列表
             pInfoList<<m_hostName<<pLoopStr<<pIDStr<<pStateStr<<pDateTimeStr;

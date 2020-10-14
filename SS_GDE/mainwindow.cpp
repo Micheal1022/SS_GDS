@@ -86,7 +86,7 @@ void MainWindow::initConnect()
 void MainWindow::initWidegt()
 {
 #ifdef FULLSCREEN
-//    showFullScreen();
+    showFullScreen();
 #endif
 
 #ifdef BEVONE

@@ -19,14 +19,6 @@ SystemConf::~SystemConf()
     delete ui;
 }
 
-void SystemConf::delAllConf()
-{
-    QString pSqlQuery = "delete from HOSTINFO;";
-    QSqlDatabase db = SqlManager::openConnection();
-    SqlManager::delAllData(db,pSqlQuery);
-    SqlManager::closeConnection(db);
-}
-
 void SystemConf::initWidget()
 {
     initTableWidget(ui->tableWidget);
@@ -206,8 +198,6 @@ void SystemConf::initTableWidget(QTableWidget *tableWidget)
     tableWidget->setColumnWidth(S_PATH_7, 90);
     tableWidget->setColumnWidth(S_PORT_8, 90);
     tableWidget->setColumnWidth(S_PATH_8, 90);
-
-
 }
 
 
@@ -232,7 +222,7 @@ void SystemConf::slotBtnAddHost()
             item->setText(tr("数据库路径"));
             break;
         case S_ABLE:
-            item->setText("启用");
+            item->setText(tr("启用"));
             item->setCheckState(Qt::Checked);
             item->setFlags(Qt::NoItemFlags);
             break;

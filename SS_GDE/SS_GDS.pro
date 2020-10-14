@@ -5,8 +5,8 @@
 #-------------------------------------------------
 
 
-#DEFINES += BEVONE
-DEFINES += SENSOR
+DEFINES += BEVONE
+#DEFINES += SENSOR
 
 
 DEFINES += FULLSCREEN

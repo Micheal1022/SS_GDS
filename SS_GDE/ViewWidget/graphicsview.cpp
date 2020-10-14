@@ -116,6 +116,7 @@ void GraphicsView::confView(QList<SensorItemInfo> itemInfoList, QString loop, QS
     ui->graphicsView->setMouseTracking(true);
     ui->graphicsView->setDragMode(QGraphicsView::RubberBandDrag);
 
+    QList<QGraphicsItem *> selectItemList;
     //初始化ItemInfo
     int pRowNum,pColumnNum;
     pRowNum = pColumnNum = 0;
@@ -143,8 +144,11 @@ void GraphicsView::confView(QList<SensorItemInfo> itemInfoList, QString loop, QS
             pItem->setScale(itemInfoList.value(ind).m_zoom);
         }
         m_scene->addItem(pItem);
+        selectItemList.append(pItem);
     }
     m_selectItemList = m_scene->items();
+    //qDebug()<<"selectItemList   -----> "<<selectItemList;
+    //qDebug()<<"m_selectItemList -----> "<<m_selectItemList;
 
     UdpThread *udpThread = new UdpThread(QHostAddress(hostIP) ,port.toUInt());
     QThread *thread = new QThread;
@@ -355,9 +359,9 @@ void GraphicsView::slotBtnSave()
     //获取item的列表，列表的顺序是最小的位置保存最上层的item;
     QList<QGraphicsItem *> itemList = m_scene->items();
     int pItemCount = itemList.count();
-    for (int index = 1; index < pItemCount; index++) {
+    for (int index = 0; index < pItemCount; index++) {
         int pCurrentIndex = pItemCount - 1 - index;
-        if (pCurrentIndex == 0) {
+        if (pCurrentIndex == 128) {
             QGraphicsItem *pItem = itemList.value(pCurrentIndex);
             //查找背景图片，保存缩放等级
             pScale = pItem->scale();
@@ -365,7 +369,7 @@ void GraphicsView::slotBtnSave()
             SqlManager::setPngsZoom(pSqlDatabase,m_loop,QString::number(pScale),m_hostIP);
             SqlManager::closeConnection(pSqlDatabase);
         } else {
-            //查找节点土元，保存缩放等级
+            //查找节点图元，保存缩放等级
             SensorItem *pItem = qgraphicsitem_cast<SensorItem*>(itemList.value(pCurrentIndex));
             QPointF pScenePos = pItem->scenePos();
             pScale = pItem->scale();
@@ -380,7 +384,7 @@ void GraphicsView::slotBtnSave()
             pItem->setFlag(QGraphicsItem::ItemIsSelectable,false);
         }
     }
-    setNodeInfoZoom(m_itemInfoList, poxList, pScaleList,m_dbPaht);
+    setNodeInfoZoom(m_itemInfoList, poxList, pScaleList, m_dbPaht);
 }
 
 void GraphicsView::analysisData(QByteArray hostData)
